@@ -7,7 +7,7 @@
     "copy:assets": "mkdir -p dist/assets && cp -R assets/. dist/assets",
     "build:watch": "npm run copy:assets && marp slides.md -w --output dist/index.html",
     "build": "npm run copy:assets && marp slides.md --html --output dist/index.html",
-    "pdf": "marp slides.md --pdf --output dist/slides.pdf"
+    "pdf": "marp slides.md --pdf --allow-local-files --output generated/slides.pdf"
   },
   "devDependencies": {
     "@marp-team/marp-cli": "4.3.1",
